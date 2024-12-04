@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="top-row">
+                <div class="logo">
+                    <a href="#">Site Logo</a>
+                </div>
+                <div class="top-right">
+                    <span class="call-us"><i class="fas fa-phone-alt"></i> Call Us: <a href="tel:01623030020">01623 030020</a></span>
+                    <span class="login-register">
+                        <a href="#"><i class="fas fa-user"></i> Login</a> / 
+                        <a href="#">Register</a>
+                    </span>
+                    <a href="#" class="icon-btn"><i class="fas fa-search"></i></a>
+                    <a href="#" class="icon-btn hamburger-menu"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Booking</a></li>
+                    <li><a href="#">House</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<section class="text-banner-slider">
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <h1>Welcome to House Rent Portal</h1>
+                <p>Find your dream home with ease and comfort.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="slide">
+                <h1>List Your Property</h1>
+                <p>Reach thousands of potential tenants by listing your property here.</p>
+                <button>Get Started</button>
+            </div>
+            <div class="slide">
+                <h1>Affordable Rentals</h1>
+                <p>Browse through our wide range of budget-friendly rental options.</p>
+                <button>Explore Now</button>
+            </div>
+        </div>
+
+        <button class="nav-button left" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="nav-button right" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</section>
+<div class="container">
+    <div class="row heading-row">
+        <h1 class="main-heading">For Rates & Availability</h1>
+    </div>
+
+    <div class="row sub-heading-row">
+        <h2 class="sub-heading">Search Your House</h2>
+    </div>
+
+    <div class="row form-row">
+        <div class="form-group location-group">
+            <label for="location" class="input-label">Living Area</label>
+            <input type="text" id="location" class="input-field" placeholder="Where do you want to live?">
+        </div>
+
+        <div class="form-group type-group">
+            <label for="type" class="input-label">Type</label>
+            <select id="type" class="input-field">
+                <option value="apartment">Apartments</option>
+                <option value="villa">Villa</option>
+                <option value="house">House</option>
+            </select>
+        </div>
+
+        <div class="form-group price-group">
+            <label for="price" class="input-label">Price</label>
+            <div class="price-range">
+                <input type="number" id="min-price" class="input-field price-input" placeholder="Min" min="0">
+                <input type="number" id="max-price" class="input-field price-input" placeholder="Max" min="0">
+            </div>
+        </div>
+
+        <div class="form-group family-group">
+            <label for="family" class="input-label">For</label>
+            <select id="family" class="input-field">
+                <option value="family">Family</option>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row button-row">
+        <div class="form-group center-button-group">
+            <button id="check-availability" class="btn-check-availability">Check Availability</button>
+        </div>
+    </div>
+</div>
+<section class="about-us">
+    <div class="main-heading">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="subheading">
+        <h2>Welcome to our House Rent Company</h2>
+    </div>
+
+    <div class="content-row">
+        <div class="column headings-column">
+            <div class="heading-item">About Company</div>
+            <div class="heading-item">Terms & Condition</div>
+            <div class="heading-item">Our Specialty</div>
+            <div class="heading-item">Our Specialty</div>
+        </div>
+
+        <div class="column description-column">
+            Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis mauris egeth lorem ultricies ferme is ntum a inti diam. Morbi mollis pellden tesque offs aiug ueia nec rhoncus. Nam ute ultricies. Cras etitikis mauris eget lorem ultricies ferme ntum a inti diam. Morbi mollis pellen tesque offs aiug ueia nec rhoncus. Nam ute ultricies.
+            <br><br>
+            Amorem ipsum dolor sit amet, consectetur<br>
+            Cras etitikis mauris egeth lorem ultricies<br>
+            Amorem ipsum dolor sit amet, consectetur<br>
+            Cras etitikis mauris egeth lorem ultricies<br>
+            Amorem ipsum dolor sit amet, consectetur<br>
+            Cras etitikis mauris egeth lorem ultricies
+        </div>
+
+        <div class="column image-column">
+            <img src="./about-image.png" alt="House Rent Company" />
+        </div>
+    </div>
+</section>
+<div class="rooms-apartments">
+    <h1>Rooms & Apartments</h1>
+
+    <h2>Find Your Rooms, For Your Ability</h2>
+
+    <div class="cards-grid">
+        <div class="card">
+            <div class="image-placeholder">Image Placeholder</div>
+            <div class="card-info">
+                <h3>Family Apartment</h3>
+                <p>Dhanmondi, Dhaka</p>
+                <p>3 Bedrooms 2 Bathrooms</p>
+                <p>$200</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-placeholder">Image Placeholder</div>
+            <div class="card-info">
+                <h3>Deluxe Apartment</h3>
+                <p>Gulshan, Dhaka</p>
+                <p>2 Bedrooms 1 Bathroom</p>
+                <p>$150</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-placeholder">Image Placeholder</div>
+            <div class="card-info">
+                <h3>Luxury Suite</h3>
+                <p>Banani, Dhaka</p>
+                <p>4 Bedrooms 3 Bathrooms</p>
+                <p>$400</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-placeholder">Image Placeholder</div>
+            <div class="card-info">
+                <h3>Modern Apartment</h3>
+                <p>Uttara, Dhaka</p>
+                <p>3 Bedrooms 2 Bathrooms</p>
+                <p>$250</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-placeholder">Image Placeholder</div>
+            <div class="card-info">
+                <h3>Cozy Studio</h3>
+                <p>Bashundhara, Dhaka</p>
+                <p>1 Bedroom 1 Bathroom</p>
+                <p>$100</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-placeholder">Image Placeholder</div>
+            <div class="card-info">
+                <h3>Elegant Flat</h3>
+                <p>Mirpur, Dhaka</p>
+                <p>2 Bedrooms 1 Bathroom</p>
+                <p>$180</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="image-overlay">
+            <div class="stats-content">
+                <div class="stat">
+                    <h1>2500</h1>
+                    <p>Clients</p>
+                </div>
+                <div class="stat">
+                    <h1>3055</h1>
+                    <p>Booking</p>
+                </div>
+                <div class="stat">
+                    <h1>50</h1>
+                    <p>Swimming</p>
+                </div>
+                <div class="stat">
+                    <h1>1530</h1>
+                    <p>Apartment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="photo-gallery-section">
+    <div class="gallery-container">
+        <div class="gallery-images">
+            <div class="image-box">Image 1</div>
+            <div class="image-box">Image 2</div>
+            <div class="image-box">Image 3</div>
+            <div class="image-box">Image 4</div>
+            <div class="image-box">Image 5</div>
+            <div class="image-box">Image 6</div>
+        </div>
+
+        <div class="gallery-content">
+            <div class="gallery-heading">
+                <h1>Our Photo Gallery</h1>
+            </div>
+
+            <div class="gallery-description">
+                <h2>Best of our Event portfolio Photos</h2>
+                <p>
+                    Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras etitikis 
+                    mauris eget lorem ultricies ferme ntum a inti diam. Morbi mollis pellen tesque offs aiug ueia nec 
+                    rhoncus. Nam ute ultricies.
+                </p>
+                <button>All Photos & Video</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="rent-your-house">
+    <div class="rent-container">
+        <div class="image-overlay">
+            <div class="rent-content">
+                <div class="left-text">
+                    <h1>Do you want to Rent your House</h1>
+                    <p>Call us and list your property here</p>
+                </div>
+                <div class="right-text">
+                    <p>+880123654987</p>
+                    <p>company@gmail.com</p>
+                    <button>Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog-posts">
+    <div class="container">
+      <h1 class="main-heading">Our Blog Post</h1>
+      
+      <h2 class="sub-heading">Our News Feed</h2>
+      
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-image">
+            <div class="image-placeholder">Image Placeholder</div>
+          </div>
+          <div class="card-content">
+            <p class="card-date-category">July 25, 2016 | Rooms & Suites</p>
+            <h3 class="card-title">Finding best places to visit in California</h3>
+            <div class="card-meta">
+              <span class="meta-item"><i class="icon-views"></i> 35</span>
+              <span class="meta-item"><i class="icon-wishlist"></i> 09</span>
+              <span class="meta-item"><i class="icon-comments"></i> 05</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-image">
+            <div class="image-placeholder">Image Placeholder</div>
+          </div>
+          <div class="card-content">
+            <p class="card-date-category">July 25, 2016 | Rooms & Suites</p>
+            <h3 class="card-title">Finding best places to visit in California</h3>
+            <div class="card-meta">
+              <span class="meta-item"><i class="icon-views"></i> 35</span>
+              <span class="meta-item"><i class="icon-wishlist"></i> 09</span>
+              <span class="meta-item"><i class="icon-comments"></i> 05</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-image">
+            <div class="image-placeholder">Image Placeholder</div>
+          </div>
+          <div class="card-content">
+            <p class="card-date-category">July 25, 2016 | Rooms & Suites</p>
+            <h3 class="card-title">Finding best places to visit in California</h3>
+            <div class="card-meta">
+              <span class="meta-item"><i class="icon-views"></i> 35</span>
+              <span class="meta-item"><i class="icon-wishlist"></i> 09</span>
+              <span class="meta-item"><i class="icon-comments"></i> 05</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="button-row">
+        <button class="btn-show-all">Show All</button>
+      </div>
+    </div>
+  </section>
+  
+<footer class="footer">
+    <div class="container">
+        <div class="footer-column">
+            <h3>About House Rent</h3>
+            <p class="footer-logo">HouseRent</p>
+            <p class="footer-description">
+                We Provide Premium Word Press, Ghost and HTML template. Our Perm tritium Templates is, 
+                develop gaped in a way so that the clients find Support. Themes are developed in a way so that 
+                the clients find.
+            </p>
+            <a href="#" class="footer-btn">More</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Place Category</h3>
+            <ul class="footer-list">
+                <li><a href="#">Flat for Rent Francis</a></li>
+                <li><a href="#">Flat for Rent Collins St</a></li>
+                <li><a href="#">Flat for Rent Rose Ln</a></li>
+                <li><a href="#">Flat for Rent Cosgrave Ln</a></li>
+                <li><a href="#">Flat for Rent Bourke St</a></li>
+                <li><a href="#">Flat for Rent Flienders Ln</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Instagram Image</h3>
+            <div class="instagram-grid">
+                <div class="instagram-box"></div>
+                <div class="instagram-box"></div>
+                <div class="instagram-box"></div>
+                <div class="instagram-box"></div>
+                <div class="instagram-box"></div>
+                <div class="instagram-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 GTS. All Rights Reserved.</p>
+    </div>
+</footer>
+<script>
+let currentSlide = 0;
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.slide');
+    slides[currentSlide].classList.remove('active');
+
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+
+    slides[currentSlide].classList.add('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.slide')[0].classList.add('active');
+});
+
+
+</script>
+
+</body>
+</html>
